@@ -191,7 +191,7 @@
 				
 				$wikiinfo = $placemark->appendChild($this->doc->createElementNS($this->ns_wiki, 'wikitude:info'));
 				if(strlen($poi->getThumbnail()) > 0)
-					$wikiinfo->appendChild($this->doc->createElementNS($this->ns_wiki,'wikitude:thumbnail', 'http://images.powerhour.at/logosLokale/square/'.$poi->getThumbnail()));
+					$wikiinfo->appendChild($this->doc->createElementNS($this->ns_wiki,'wikitude:thumbnail', $poi->getThumbnail()));
 				if(strlen($poi->getPhone()) > 0)
 					$wikiinfo->appendChild($this->doc->createElementNS($this->ns_wiki,'wikitude:phone', $poi->getPhone()));
 				if(strlen($poi->getUrl()) > 0)
