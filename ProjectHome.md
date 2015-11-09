@@ -1,0 +1,1 @@
+The Wikitude-World-Creator provides a library for php to create a world for Wikitude without any knowledge of KML and/or ARML.
